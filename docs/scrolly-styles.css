@@ -1,0 +1,158 @@
+.scrolly-container {
+    position: relative;
+    margin-bottom: 1.2em;
+}
+
+.sticky-thing {
+    position: sticky;
+    top: 0;
+    transform: translate(0px, 0px);
+    z-index: 0;
+    height: 100svh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    /* Center everything inside */
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; */
+}
+
+.sticky-thing > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;  
+}
+
+.video-container {
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+.scrolly-container video {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+.sticky-thing iframe {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.steps-container {
+    transform: translate3d(0,0,0);
+    position: relative;
+    padding: 0;
+    z-index: 10;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding-bottom: 4em;
+    
+}
+
+.step {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70svh;
+    transform: translate(0px, 0px);
+}
+
+.step p {
+    text-align: left;
+}
+
+.step p:last-child {
+    padding: 0;
+}
+
+.step > * {
+    width: 700px;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+    text-align: center;
+    padding: 1.2em !important;
+    background-color: #581fcf26;
+}
+
+.sticky-thing > canvas {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain; 
+    /* I changed the object-fit from cover to contain to ensure that my charts arent cut off */
+    display: block;  
+}
+
+/* When it's less than 700 pixels wide, do normal scrollytelling */
+
+@media only screen and (min-width: 700px) {
+    .scrolly-container.side-by-side {
+        display: flex;
+    }
+
+    .scrolly-container.side-by-side>div {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 0.75em;
+    }
+
+    .scrolly-container.side-by-side .scrolly-overlay {
+        margin-top: 90vh;
+        order: 0;
+        /* Change these to adjust sizing options */
+        min-width: 15rem;
+        max-width: 20rem;
+    }
+
+    .scrolly-container.side-by-side .sticky-thing {
+        order: 1;
+        flex-grow: 2;
+    }
+
+    /* Added the below to customize split of scrolly text on one side
+    and images on the other */
+
+@media only screen and (min-width: 700px) {
+    .scrolly-container {
+        display: flex;
+    }
+
+    .sticky-thing {
+        order: 2;
+        width: 60vw;
+        flex-grow: 20;
+        flex-shrink: 0;
+        flex-basis: 50vw;
+
+        /* these last 3 lines: first one ensures it doesn't grow to fill extra space.; flex-shrink means it doesnt shrink if theres not enough room, and 50vw (flex-basis): Start at a width of 50% of the viewport width (vw = viewport width). */
+    }
+
+    .steps-container {
+        order: 1;
+        width: 40vw;
+        max-width: 50vw;
+        margin: 0;
+        padding-left: 2em;
+        padding-top: 20vh;
+        box-sizing: border-box;
+    }
+
+    .step > * {
+        width: 100%;
+        max-width: 28rem;
+        border-radius: 8px; /* add this line — higher number = more rounded */
+}
+    #step1 {
+    margin-top: 20vh;
+
+}

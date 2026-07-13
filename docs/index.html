@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Environment Hearings In D And R Congresses</title>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-size: 19px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-rendering: optimizeLegibility;
+      background-color: #f4f4f4
+    }
+
+    .content {
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .header {
+      padding: 3em 0;
+    }
+
+    a {
+      color: #0645AD;
+    }
+
+    .footer {
+      background: #581fcf26;
+      text-align: center;
+      font-size: 0.8em;
+      margin-top: 4em;
+      padding: 4em 0;
+  
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+
+    }
+
+    figure {
+      margin: 0;
+      padding-bottom: 1.2em;
+    }
+
+    figcaption {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 0.5em;
+      color: #666;
+    }
+
+    h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: bold;
+      font-size: 3em;
+      line-height: 1.1;
+    }
+
+    .subhead {
+      font-family: 'Lora', Georgia, serif;
+    }
+
+    iframe,
+    img,
+    video {
+      max-width: 100%;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 0;
+      padding-bottom: 1.2em;
+    }
+
+    ul {
+      margin: 0;
+      padding-bottom: 1em;
+      line-height: 1.6;
+    }
+
+    iframe {
+      padding-bottom: 1.2em;
+    }
+
+    .full-width figure {
+      text-align: center;
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+      background: #fff880;
+    }
+
+    /* margin on mobile */
+    @media (max-width: 640px) {
+      body {
+        font-size: 18px;
+      }
+
+      .content {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+
+    }
+
+
+
+  </style>
+  <link href="scrolly-styles.css" rel="stylesheet">
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <div class="header">
+      <h1>How do Congressional Democrats and Republicans Talk About The Environment? </h1>
+      <p class="subhead">An analysis of common phrases in the titles of Congressional environment committee hearings. </p>
+    </div>
+    <div class="byline">
+      <p>By <a href="https://abigailmihaly.com">Abigail Mihaly</a></p>
+    </div>
+    <p>It's no secret that Republicans and Democrats talk about climate, energy, and the environment differently.</p>
+    <p>During a <a href="https://insideepa.com/daily-news/un-address-trump-urges-allies-halt-climate-mitigation-efforts">speech</a>
+      to the United Nations last fall, President Donald Trump called climate change "the greatest con job ever perpetrated on the world.”
+      </p>
+    <p>This is in sharp contrast to lawmakers advocating for prioritizing policies that could help avoid the worst impacts
+      of climate change, like Sen. Sheldon Whitehouse, who <a href="https://www.theguardian.com/us-news/2025/jul/10/sheldon-whitehouse-fossil-fuels">argues</a> that climate change itself is not the con job,
+      but the fossil fuel industry’s messaging around climate change. The decades-long messaging campaign by industry giants
+      is “the biggest and most malevolent propaganda operation the country has ever seen,” he argued.
+      </p>
+    <p>And yet — despite serious disagreement on the substance of the topic — Congress, regardless of which party controls,
+      has to do the core work of energy and environment lawmaking. That includes energy and environment issues.
+      </p>
+    <p>Four House committees in particular: the House Energy and Commerce, House Natural Resources, Senate Environment and Public Works
+      and Senate Energy and Natural Resources Committees, discuss energy and environment related issues session after session. 
+      Examining the titles of these committees’ hearings is a great proxy to consider: how do Democrats versus Republicans talk about and prioritize these issues?
+        </p>
+
+  </div>
+
+  <section id="scrolly-images" class="scrolly-container">
+    <div class="sticky-thing">
+      <img src="graphic_base.png">
+    </div>
+
+    <div class="steps-container">
+      <div class="step" id="step1">
+        <div>
+          <p>Here are the top phrases overall that each party used to title their environment-related
+            Congressional hearings over the last decade.</p>
+        </div>
+      </div>
+    
+      <div class="step" id="step2">
+        <div>
+        <p>One of the first things that jumps out is that “climate change” appears only on Democrats’ list.
+        </p>
+        <p>Many Republicans -- even those working on climate and energy issues — have publicly states they do not believe
+          climate change is an issue. 
+          Interior Secretary Doug Burgum argued for establishing more data centers to power AI, pushing back on arguments from the left arguing
+          AI’s power consumption is a major problem because of its potential to worsen climate change.
+          </p>
+        <p>“The real existential threat right now is not a degree of climate change,” Burgum <a href=https://www.eenews.net/articles/burgum-losing-ai-race-is-more-dangerous-than-climate-change/">told Politico's E&E News</a>.
+          “It’s the fact that we could lose the AI arms race if we don’t have enough power.”
+          </p>
+        <p>There’s also no mention of renewable energy on the Republican side. Republicans, especially in the last few years,
+            generally prioritize fossil-linked energies over wind and solar energies. Some technologies draw support from both sides, like nuclear and hydropower.
+          </p>
+        </div>
+      </div>
+
+      <div class="step" id="step3">
+        <div>
+        <p>I was also interested to notice Democrats’ use of the word “communities” at a much higher rater than Republicans.</p>
+        <p>For example, the then Democrat-controlled House Natural Resources Committee held a 2020 meeting titled “Environmental Justice for Coastal Communities: Examining Inequities in Federal Grantmaking.”
+        Many of the terms Democrats use to discuss the community-level impacts of climate change are not frequently used by Republicans.
+        Trump has more recently seized on such terms as a way to attempt to root out liberal policies at environmental agencies.
+        In March 2025, the Environmetnal Projection Agency announced it “cancelled grants and contracts related to DEI and environmental justice.”
+        A federal judge <a href= https://insideepa.com/daily-feed/9th-circuit-reinstates-rescinded-epa-dei-grants"> reinstated</a> them in June, 2026.
+        </p>
+        <p>Interestingly, the broader concept of "diversity" also makes it on the Demcocrats' list; another term Trump-era
+        Republicans have sought to banish from fedearl government use.
+        </p>
+        </div>
+      </div>
+
+      <div class="step" id="step4">
+        <div>
+        <p>In Republican congresses, meanwhile, wildlife-related terms are more common than in Democrat-related Congresses.</p>
+          <p>This fits with a longstanding understand of Republican outdoorsmanship. Rep. John Curtis, a Republican from Utah and chair of the conservative climate caucus,
+          for example, frequently seeks to connect with conservative constituents by talking about going walking and fishing.
+          "One of my long-term goals is to have every Republican talking about being good stewards, leaving this Earth better than we found it," Curtis told The Cool Down.
+          "And in truth, I think we always have, but we talk about it in a different way," Curtis
+          <a href= https://www.thecooldown.com/green-business/john-curtis-republican-congress-climate-change-party/">told The Cooldown</a> in 2023.</p>
+        </div>
+        </div>
+      <!-- <div class="step" id="step5">
+        <p>Step five, lorem ipsum dolor sic amet.</p> -->
+      </div>
+    </div>
+  
+
+  </section>
+  <div class="content">
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+      enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+      ratione voluptatem sequi nesciunt.</p>
+    <!-- <figure>
+      <img
+        src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
+      <figcaption>This is an image caption</figcaption>
+    </figure>
+    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+      numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+      veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+    </p>
+  </div>
+  <div class="full-width">
+    <figure>
+      <img
+        src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
+      <figcaption>This is another image caption, but this time it's a full-width image</figcaption>
+    </figure>
+  </div>
+  <div class="content">
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+      corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+      qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+      cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+      repellendus.</p>
+  </div>
+   -->
+  <div class="footer">
+    <div class="content">
+      <p>Data from Congress.gov. More information about my data and this project available <a href="https://github.com/AbigailMihaly/How-Ds-And-Rs-Talk-About-The-Environment">here</a>. </p>
+    </div>
+  </div>
+
+  <script>
+    /*************
+    
+    This is the JavaScript that makes the scrolly work 
+    
+    *************/
+
+    /* 
+    This part attaches a scroll to the element with id="scrolly-images"    
+    */
+    (() => {
+      const scroller = scrollama()
+
+      scroller
+        .setup({
+          parent: document.querySelector("#scrolly-images"),
+          step: ".step",
+          offset: 0.6,
+          // debug: true,
+        })
+        .onStepEnter(function ({ element, index, direction }) {
+          const event = new CustomEvent("stepin", { detail: { direction: direction } })
+          element.dispatchEvent(event)
+        })
+        .onStepExit(function ({ element, index, direction }) {
+          const event = new CustomEvent("stepout", { detail: { direction: direction } })
+          if (direction === "up" && element.previousElementSibling) {
+            const event = new CustomEvent("stepin", { detail: { direction: direction } })
+            element.previousElementSibling.dispatchEvent(event)
+          }
+        })
+
+      window.addEventListener("resize", scroller.resize)
+    })()
+
+    /*
+    This part sets up your actions. In this case, it's changing the image in the scrolly container.
+    */
+    d3.select("#step1").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "graphic_allwords.png")
+    })
+
+    d3.select("#step2").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "graphic_climate.png")
+    })
+
+    d3.select("#step3").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "graphic_Dcommunities.png")
+    })
+
+    d3.select("#step4").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "graphic_Rspecies.png")
+    })
+
+    // d3.select("#step5").on('stepin', (e) => {
+    //   d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image1.jpg")
+    // })
+  </script>
+  <style>
+    /* Change this to adjust the padding between steps
+    .step {
+      margin-bottom: 70vh;
+    } */
+  </style>
+
+</body>
+
+</html>

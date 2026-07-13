@@ -1,0 +1,151 @@
+,noun_phrase,Dtotal_frequency,Dhouse_frequency,Dsenate_frequency,phrase_category
+150,energy,47,0,47,general
+154,the boundary,17,0,17,general
+22,land management,12,4,8,general
+109,opportunities,11,2,9,general
+18,communities,10,5,5,general
+164,challenges,10,0,10,general
+163,certain federal land,10,0,10,general
+9,public lands,10,6,4,general
+42,management,9,3,6,general
+16,reclamation,9,5,4,general
+169,land,9,0,9,general
+174,secretary,8,0,8,general
+178,certain land,8,0,8,general
+180,programs,8,0,8,general
+181,the office,8,0,8,general
+188,science,7,0,7,general
+78,renewable energy,7,2,5,general
+202,the opportunities,6,0,6,general
+200,nuclear energy,6,0,6,general
+196,economic development,6,0,6,general
+192,transportation,6,0,6,general
+10,impacts,6,6,4,general
+146,implementation,6,2,4,general
+12,public health,5,5,12,general
+13,oversight,5,5,12,general
+14,the environment,5,5,12,general
+15,the impacts,5,5,12,general
+210,federal land,5,0,5,general
+217,assistant administrator,5,0,5,general
+218,operation,5,0,5,general
+220,engineers,5,0,5,general
+17,climate change,5,5,4,general
+232,the national forest system,4,0,4,general
+222,projects,4,0,4,general
+225,joseph goffman,4,0,4,general
+226,administrator,4,0,4,general
+230,resiliency,4,0,4,general
+234,state and local perspectives,4,0,4,general
+233,use,4,0,4,general
+235,certain outer continental shelf revenues,4,0,4,general
+20,access,4,4,5,general
+24,the mineral withdrawal,4,4,8,general
+25,the superior national forest,4,4,8,general
+26,indigenous communities,4,4,8,general
+19,solutions,4,4,5,general
+244,solid waste,4,0,4,general
+245,the republic,4,0,4,general
+246,the licensing,4,0,4,general
+247,the water resources development act,4,0,4,general
+252,alaska natives,4,0,4,general
+256,energy efficiency,3,0,3,general
+270,the clean air act,3,0,3,general
+274,certain additions,3,0,3,general
+272,the national wilderness preservation system,3,0,3,general
+271,development,3,0,3,general
+268,the tennessee valley authority,3,0,3,general
+258,certain activities,3,0,3,general
+267,nuclear waste,3,0,3,general
+265,the completion,3,0,3,general
+263,private water rights,3,0,3,general
+261,the dolores river national conservation area,3,0,3,general
+260,leases,3,0,3,general
+259,uranium,3,0,3,general
+264,its environs,3,0,3,general
+276,certain wild rivers,3,0,3,general
+46,indians,3,3,25,general
+37,consumers,3,3,8,general
+56,the budget,3,3,21,general
+54,“the future,3,3,21,general
+53,“connecting america,3,3,21,general
+49,taxpayers,3,3,4,general
+47,jobs,3,3,25,general
+45,natural resources,3,3,25,general
+41,action,3,3,8,general
+38,the u.s. territories,3,3,8,general
+39,the future,3,3,8,general
+35,the interior’s spending priorities,3,3,8,general
+34,the need,3,3,8,general
+33,lessons,3,3,8,general
+32,diversity,3,3,8,general
+30,all act,3,3,8,general
+29,enforcement,3,3,8,general
+28,environmental justice,3,3,8,general
+27,coastal communities,3,3,8,general
+76,the climate,2,2,21,general
+72,the spending priorities,2,2,21,general
+73,americans,2,2,21,general
+74,transparency,2,2,21,general
+75,conservation,2,2,21,general
+97,the conservation,2,2,5,general
+79,health benefits,2,2,5,general
+82,the threats,2,2,5,general
+85,wildlife service,2,2,5,general
+70,the economy,2,2,21,general
+71,ocean energy management,2,2,21,general
+58,affordability,2,2,21,general
+69,hydrofluorocarbons,2,2,21,general
+68,the production,2,2,21,general
+65,virtual hearing,2,2,21,general
+64,prepa,2,2,21,general
+63,the puerto rico electric power authority,2,2,21,general
+62,scientific integrity,2,2,21,general
+61,inclusion,2,2,21,general
+60,equity,2,2,21,general
+59,civil rights,2,2,21,general
+87,"""oil and gas development",2,2,5,general
+86,rep. grijalva,2,2,5,general
+88,the u.s. bureau,2,2,5,general
+98,restoration,2,2,5,general
+110,atmospheric administration legislative hearing,2,2,9,general
+118,relation,2,2,9,general
+117,wrongful conduct,2,2,9,general
+116,abuse,2,2,9,general
+115,fraud,2,2,9,general
+114,waste,2,2,9,general
+93,august,2,2,5,general
+112,subpoenas,2,2,9,general
+111,issuance,2,2,9,general
+94,indian tribes,2,2,5,general
+89,lands,2,2,5,general
+107,peaceful protesters,2,2,5,general
+106,"""climate change",2,2,5,general
+105,tribal communities,2,2,5,general
+104,all americans,2,2,5,general
+103,safety,2,2,5,general
+101,workers,2,2,5,general
+100,innovation,2,2,5,general
+99,offshore drilling,2,2,5,general
+119,functions,2,2,9,general
+120,the jurisdiction,2,2,9,general
+121,policy priorities,2,2,9,general
+123,recreation,2,2,9,general
+90,states,2,2,5,general
+91,the purpose,2,2,5,general
+148,the concurrent resolution,2,2,4,general
+147,the reconciliation directive,2,2,4,general
+92,land and water resources,2,2,5,general
+145,our communications networks,2,2,4,general
+144,the u.s nuclear legacy,2,2,4,general
+142,need,2,2,4,general
+138,the actions,2,2,6,general
+133,the obligations,2,2,6,general
+132,the compliance,2,2,6,general
+131,offshore oil and gas leasing,2,2,6,general
+130,the 2023-2028 five-year program,2,2,6,general
+128,the future act,2,2,6,general
+127,u.s. climate targets,2,2,6,general
+126,"""the future",2,2,6,general
+124,federal lands,2,2,9,general
+113,mismanagement,2,2,9,general
