@@ -9,15 +9,9 @@
     transform: translate(0px, 0px);
     z-index: 0;
     height: 100svh;
-    width: 100vw;
+    width: 20%;
     margin: 0;
     overflow: hidden;
-    /* Center everything inside */
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden; */
 }
 
 .sticky-thing > img {
@@ -132,7 +126,7 @@
         width: 60vw;
         flex-grow: 20;
         flex-shrink: 0;
-        flex-basis: 50vw;
+        flex-basis: 50%;
 
         /* these last 3 lines: first one ensures it doesn't grow to fill extra space.; flex-shrink means it doesnt shrink if theres not enough room, and 50vw (flex-basis): Start at a width of 50% of the viewport width (vw = viewport width). */
     }
@@ -140,7 +134,7 @@
     .steps-container {
         order: 1;
         width: 40vw;
-        max-width: 50vw;
+        max-width: 40vw;
         margin: 0;
         padding-left: 2em;
         padding-top: 20vh;
