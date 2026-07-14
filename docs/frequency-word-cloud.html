@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Frequency-Ranked Word Cloud Prototype</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    max-width: 1100px;
+    margin: 40px auto;
+    color: #1a1a1a;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 0.2em;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 2em;
+  }
+  .cloud-wrap {
+    position: relative;
+    padding-left: 40px;
+  }
+  .axis-label {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+  .axis-label span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 0.75em;
+    color: #888;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0 22px;
+    margin-bottom: 14px;
+  }
+  .word {
+    white-space: nowrap;
+  /* }
+  .word.highlight {
+    color: #7b2d8b;
+    font-weight: bold; */
+  }
+</style>
+</head>
+<body>
+
+  <h2>Congressional Hearings Under Democrat-Controlled Congresses:<br>Top Thematic Phrases</h2>
+  <p class="subtitle">(sample data — replace with your real word/frequency list)</p>
+
+  <div class="cloud-wrap">
+    <div class="axis-label"><span>&uarr; word occurs more often</span></div>
+    <div id="chart"></div>
+  </div>
+
+<script>
+
+const data = await df.csv('Rgeneral-forcharts.csv');
+
+// ---- CONFIG ----
+const numRows = 22;        // how many frequency bands to sort words into
+const minFontSize = 13;    // px, for the least frequent row
+const maxFontSize = 32;    // px, for the most frequent row
+
+// ---- LAYOUT LOGIC ----
+// 1. Sort words by frequency, descending (most frequent first)
+const sorted = [...data].sort((a, b) => b.freq - a.freq);
+
+// 2. Split into `numRows` roughly-even bands.
+//    Row 0 = most frequent band (top), last row = least frequent (bottom)
+const rows = Array.from({length: numRows}, () => []);
+sorted.forEach((d, i) => {
+  const rowIndex = Math.floor((i / sorted.length) * numRows);
+  rows[Math.min(rowIndex, numRows - 1)].push(d);
+});
+
+// 3. Font size scale — maps a row's rank to a font size (top rows = bigger)
+const fontScale = d3.scaleLinear()
+  .domain([0, numRows - 1])
+  .range([maxFontSize, minFontSize]);
+
+// ---- RENDER ----
+const chart = d3.select('#chart');
+
+rows.forEach((rowWords, rowIndex) => {
+  if (rowWords.length === 0) return;
+
+  // shuffle each row slightly so it doesn't look too "sorted" left-to-right
+  // (comment this out if you'd rather keep frequency order within a row)
+  const shuffled = d3.shuffle(rowWords.slice());
+
+  const rowDiv = chart.append('div').attr('class', 'row');
+
+  rowDiv.selectAll('span.word')
+    .data(shuffled)
+    .join('span')
+      .attr('class', d => 'word' + (d.highlight ? ' highlight' : ''))
+      .style('font-size', fontScale(rowIndex) + 'px')
+      .text(d => d.text);
+});
+</script>
+
+</body>
+</html>
