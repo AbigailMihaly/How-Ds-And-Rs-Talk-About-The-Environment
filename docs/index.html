@@ -27,7 +27,7 @@
     }
 
     .header {
-      padding: 3em 0;
+      padding: 3em 0 0;
     }
 
     a {
@@ -119,7 +119,6 @@
     }
 
 
-
   </style>
   <link href="scrolly-styles.css" rel="stylesheet">
   <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
@@ -129,23 +128,27 @@
 
 <body>
   <div class="content">
-    <div class="header">
+    <div class="hewindow.addEventListener("load", () => window.dispatchEvent(new Event("resize")));df.ader">
       <h1>How Do Congressional Democrats and Republicans Talk About The Environment? </h1>
-      <p class="subhead">An analysis of common phrases in the titles of Congressional environment committee hearings. </p>
+      <p class="subhead">An analysis of common phrases in the titles of Congressional environment committee hearings.</p>
     </div>
     <div class="byline">
       <p>By <a href="https://abigailmihaly.com">Abigail Mihaly</a></p>
+    </div>
+    <div class="rounded-box">
+      <p> For the best reading experience, please view this story on a desktop or laptop.
+      <p></p>
     </div>
     <p>It's no secret that Republicans and Democrats talk about climate, energy, and the environment differently.</p>
     <p>During a <a href="https://insideepa.com/daily-news/un-address-trump-urges-allies-halt-climate-mitigation-efforts">speech</a>
       to the United Nations last fall, President Donald Trump called climate change "the greatest con job ever perpetrated on the world.”
       </p>
-    <p>This is in sharp contrast to lawmakers pushing for policies that could help avoid the worst impacts
-      of climate change. Many Democratic lawmakers, such as longtime climate advocate Sen. Ed Markey (D-MA),
+    <p>As Trump promotes climate change denial, many other Republicans argue policymakers should prioritize solving other global issues above climate change.
+      Some Democratic lawmakers argue Congress must focus on decarbonizing the U.S. economy as a top issue. Democratic lawmakers, such as longtime climate advocate Sen. Ed Markey (D-MA),
       call climate change a "crisis" and an "existential threat."
       </p>
-    <p>And yet — despite serious disagreement on the substance of the topic — Congress, regardless of which party controls,
-      has to do the core work of energy and environment lawmaking. That includes energy and environment issues.
+    <p>And yet — despite serious disagreement on whether and how to address climate change — Congress, regardless of which party controls,
+      must make policy about energy and the environment.
       </p>
     <p>Four House committees are charged with most environmental issues:
       the House Energy and Commerce, House Natural Resources,
@@ -197,7 +200,7 @@
           list of top terms. Natural resources includes fuel extracted from the earth, or mined minerals
         </p>
         <p>But Demcorats are also naming their committee meetings with the term enough to make the list.
-          Mineral withdrawal also appears in Democrat committee hearing titles</p>
+          Mineral withdrawal also appears in Democrat committee hearing titles.</p>
         </div>
       </div>
 
@@ -323,6 +326,13 @@
 
       window.addEventListener("resize", scroller.resize)
     })()
+
+    window.addEventListener("load", () => window.dispatchEvent(new Event("resize")));
+   
+    window.addEventListener("load", () => {
+    window.scrollTo(0, 1);
+    window.scrollTo(0, 0);
+  });
 
     /*
     This part sets up your actions. In this case, it's changing the image in the scrolly container.
