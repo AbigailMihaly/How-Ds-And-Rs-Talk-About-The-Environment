@@ -128,7 +128,7 @@
 
 <body>
   <div class="content">
-    <div class="hewindow.addEventListener("load", () => window.dispatchEvent(new Event("resize")));df.ader">
+    <div class="header">
       <h1>How Do Congressional Democrats and Republicans Talk About The Environment? </h1>
       <p class="subhead">An analysis of common phrases in the titles of Congressional environment committee hearings.</p>
     </div>
@@ -161,7 +161,7 @@
 
   <section id="scrolly-images" class="scrolly-container">
     <div class="sticky-thing">
-      <img src="graphic_base.png">
+      <img src="graphic_allwords.png">
     </div>
 
     <div class="steps-container">
@@ -326,17 +326,17 @@
 
       window.addEventListener("resize", scroller.resize)
     })()
-
-    window.addEventListener("load", () => window.dispatchEvent(new Event("resize")));
+    // window.addEventListener("load", () => window.dispatchEvent(new Event("resize")));
    
-    window.addEventListener("load", () => {
-    window.scrollTo(0, 1);
-    window.scrollTo(0, 0);
-  });
+    // window.addEventListener("load", () => {
+    // window.scrollTo(0, 1);
+    // window.scrollTo(0, 0);
+  // });
 
     /*
     This part sets up your actions. In this case, it's changing the image in the scrolly container.
     */
+
     d3.select("#step1").on('stepin', (e) => {
       d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "graphic_allwords.png")
     })
