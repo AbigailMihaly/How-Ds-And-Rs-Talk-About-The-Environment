@@ -1,7 +1,7 @@
 
 ### Climate Hearings Over Time ###
 
-In this project, I want to explore the topics of Congressional hearings in the top environment committees over time. Public Congressional hearings, especially the House, are an especially great proxy for overall political messaging; I wanted to see how that differed across party over time.
+In this project, I wanted to explore the topics of Congressional hearings in the top environment committees over time. Public Congressional hearings, especially the House, are an especially great proxy for overall political messaging; I wanted to see how that differed across party over time.
 
 ### Data ###
 
